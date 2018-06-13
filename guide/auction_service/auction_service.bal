@@ -1,8 +1,17 @@
 import ballerina/http;
 import ballerina/io;
-
+//import ballerinax/docker;
+//
+//@docker:Config {
+//    registry:"ballerina.guides.io",
+//    name:"auction_service",
+//    tag:"v1.0"
+//}
+//
+//@docker:Expose{}
 // Service endpoint
-endpoint http:Listener auctionEP {
+endpoint http:Listener
+auctionEP {
     port:9090
 };
 
